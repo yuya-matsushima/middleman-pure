@@ -20,6 +20,16 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
+## How To "Install or Update Pure"
+
+### Install 
+
+    $ ./pure_install.sh 
+
+### Update 
+
+    $ ./pure_update.sh
+
 ## Contributing
 
 1. Fork it
