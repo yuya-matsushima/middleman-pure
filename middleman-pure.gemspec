@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'middleman/pure/version'
+require 'middleman-pure/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "middleman-pure"
   spec.version       = Middleman::Pure::VERSION
   spec.authors       = ["yterajima"]
   spec.email         = ["terra@e2esound.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Pure.css for Middleman}
+  spec.summary       = %q{middleman-pure}
+  spec.homepage      = "https://github.com/yterajima/middleman-pure"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
