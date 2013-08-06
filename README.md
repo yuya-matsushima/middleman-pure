@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ middleman init PROJECT
+    $ cd PROJECT 
+    $ vi Gemfile 
+
+Add a postscript: 
+
+    gem 'middleman-pure', :github => 'yterajima/middleman-pure'
+    gem 'font-awesome-middleman'
+
+__NOTICE:__ `font-awesome-middleman` provides `font-awesome' CSS and Fonts file your Middleman Project.
+
+    $ bundle install --path vendor/bundle
+
+For example, You can use to add these text in top of `source/stylesheets/all.css`:
+
+    //= require 'pure-min'
+    //= require 'font-awesome'
 
 ## How To "Install or Update Pure"
 
