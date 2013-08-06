@@ -6,15 +6,11 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'middleman-pure'
+    gem 'middleman-pure', :git => 'yterajima/middleman-pure'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install middleman-pure
 
 ## Usage
 
@@ -35,6 +31,10 @@ For example, You can use to add these text in top of `source/stylesheets/all.css
 
     //= require 'pure-min'
     //= require 'font-awesome'
+
+And wake up middleman server.
+
+    $ bundle exec middleman server
 
 ## How To "Install or Update Pure"
 
