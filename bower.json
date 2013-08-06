@@ -1,0 +1,14 @@
+{
+  "name": "middleman-pure",
+  "version": "0.0.1",
+  "dependencies": {
+    "pure": "~0.2.1"
+  }, 
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
