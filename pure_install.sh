@@ -1,5 +1,6 @@
 #!/bin/sh 
 bower install
+rm -rf bower_components
 cd bower_components/pure && bower install 
 npm install 
 grunt
