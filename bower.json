@@ -1,9 +1,9 @@
 {
   "name": "middleman-pure",
-  "version": "0.0.2",
+  "version": "0.5.0",
   "dependencies": {
-    "pure": ">0.2.1"
-  }, 
+    "pure": ">0.5.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
