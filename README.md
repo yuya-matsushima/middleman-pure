@@ -34,17 +34,21 @@ For example, You can use to add these text in top of `source/stylesheets/all.css
 
 And wake up middleman server.
 
-    $ bundle exec middleman server
+    $ bundle exec middleman server 
+
+### Namespaces 
+
+From `>= v0.5.2`, you can use _namespace_ (`pure` and `pure-min`) when `require` pure libraries. For example:
+
+    //= require 'pure/base'
+    //= require 'pure/buttons'
+    //= require 'pure-min/menues'
 
 ## How To "Install or Update Pure"
 
-### Install 
+### Install or Update 
 
-    $ ./pure_install.sh 
-
-### Update 
-
-    $ ./pure_update.sh
+    $ rake
 
 ## Contributing
 
