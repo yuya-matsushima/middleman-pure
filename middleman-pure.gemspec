@@ -6,7 +6,7 @@ require 'middleman-pure/version'
 Gem::Specification.new do |spec|
   spec.name          = "middleman-pure"
   spec.version       = Middleman::Pure::VERSION
-  spec.authors       = ["yterajima"]
+  spec.authors       = ["Yuya Terajima"]
   spec.email         = ["terra@e2esound.com"]
   spec.description   = %q{Pure.css for Middleman}
   spec.summary       = %q{middleman-pure}
@@ -18,6 +18,10 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  spec.add_runtime_dependency 'middleman', '>= 3.3'
+
+  spec.add_development_dependency 'cucumber', '~> 1.3'
+  spec.add_development_dependency 'aruba', '~> 0.6'
+  spec.add_development_dependency 'bundler', '~> 1.5'
+  spec.add_development_dependency 'rake', '~> 10'
 end

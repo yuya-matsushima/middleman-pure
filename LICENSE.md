@@ -1,6 +1,6 @@
 # Middleman-Pure License 
 
-Copyright (c) 2013 yterajima
+Copyright (c) 2013 Yuya Terajima
 
 MIT License
 

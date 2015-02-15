@@ -1,7 +1,8 @@
-require "middleman-pure/version"
+require 'middleman-pure/version'
 
 module Middleman
+  # Middleman Pure Module
   module Pure
-    # Your code goes here...
+    # Nothing to do
   end
 end
