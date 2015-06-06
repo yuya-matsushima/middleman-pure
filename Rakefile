@@ -9,13 +9,18 @@ css_dir   = 'app/assets/stylesheets/'
 desc "Update Pure library using bower"
 task :update_pure do
   sh "rm -r #{bower_dir}" if Dir.exists?(bower_dir)
-  sh "rm -r #{css_dir}*" if File.exists?("pure.css")
-  sh "bower install"
-  sh "cp -r #{pure_dir} #{css_dir}"
-  sh "rm -r #{bower_dir}"
-  puts "Update Pure library"
+  sh "rm -r #{css_dir}*" if File.exists?(File.join(css_dir, 'pure.css'))
 
-  puts "create namespaces"
+  puts '=== bower install ==='
+  sh "bower install"
+
+  puts '=== Update Pure library ==='
+  sh "cp -r #{pure_dir} #{css_dir}"
+
+  puts '=== Remove tmp files ==='
+  sh "rm -r #{bower_dir}"
+
+  puts '=== Create namespaces: pure, pure-min ==='
   Dir::mkdir("#{css_dir}pure/")
   Dir::mkdir("#{css_dir}pure-min/")
 
@@ -28,6 +33,7 @@ task :update_pure do
       sh "cp #{f} #{css_dir}pure/"
     end
   }
+  puts '=== complete namespaces: pure, pure-min ==='
 end
 
 desc "test command"
