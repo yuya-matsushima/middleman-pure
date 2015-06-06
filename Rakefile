@@ -1,6 +1,6 @@
 require "bundler/gem_tasks"
 
-task default: :update_pure
+task default: :test
 
 bower_dir = 'bower_components/'
 pure_dir  = bower_dir + 'pure/'
@@ -30,3 +30,7 @@ task :update_pure do
   }
 end
 
+desc "test command"
+task :test do
+  sh "cucumber features/"
+end
